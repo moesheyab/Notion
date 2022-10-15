@@ -74,10 +74,10 @@ function dispalyQuote(){
         }, i * INTERVAL);  
     });
     }
-
+// quotes.length*INTERVAL
     function dispalyWidget() {
         dispalyQuote();
-        setTimeout(dispalyWidget, quotes.length*INTERVAL);
+        setTimeout(dispalyWidget, 1000);
     }
     dispalyWidget()
 
